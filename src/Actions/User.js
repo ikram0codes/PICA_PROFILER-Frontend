@@ -215,38 +215,38 @@ export const createPost = (caption, photo) => async (dispatch) => {
   }
 };
 
-// export const deletePost = (id) => async (dispatch) => {
-//   try {
-//     dispatch({
-//       type: "deletePostRequest",
-//     });
+export const deletePost = (id) => async (dispatch) => {
+  try {
+    dispatch({
+      type: "deletePostRequest",
+    });
 
-//     const response = await axios.delete(
-//       `${BACKEND_SERVER_PATH}post/delete/${id}`
-//     );
+    const response = await axios.delete(
+      `${BACKEND_SERVER_PATH}post/delete/${id}`
+    );
 
-//     // dispatch({
-//     //   type: "deletePostSuccess",
-//     //   payload: response.message,
-//     // });
-//     console.log(response);
-//     // toast.success(response.data.message, {
-//     //   style: {
-//     //     border: "1px solid #713200",
-//     //     padding: "16px",
-//     //     color: "#713200",
-//     //   },
-//     //   iconTheme: {
-//     //     primary: "#713200",
-//     //     secondary: "#FFFAEE",
-//     //   },
-//     // });
-//   } catch (error) {
-//     // dispatch({
-//     //   type: "deletePostFailure",
-//     //   payload: error.response.data.message,
-//     // });
-//     // toast.error(error.response.data.message);
-//     console.log(error);
-//   }
-// };
+    // dispatch({
+    //   type: "deletePostSuccess",
+    //   payload: response.message,
+    // });
+    console.log(response);
+    // toast.success(response.data.message, {
+    //   style: {
+    //     border: "1px solid #713200",
+    //     padding: "16px",
+    //     color: "#713200",
+    //   },
+    //   iconTheme: {
+    //     primary: "#713200",
+    //     secondary: "#FFFAEE",
+    //   },
+    // });
+  } catch (error) {
+    // dispatch({
+    //   type: "deletePostFailure",
+    //   payload: error.response.data.message,
+    // });
+    // toast.error(error.response.data.message);
+    console.log(error);
+  }
+};
