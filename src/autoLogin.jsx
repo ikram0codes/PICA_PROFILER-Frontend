@@ -17,7 +17,7 @@ function AutoLogin() {
         dispatch({
           type: "LoadUserRequest",
         });
-        const response = await axios.get(`http://localhost:4000/user/refresh`, {
+        const response = await axios.get(`https://pica-profiler.vercel.app/user/refresh`, {
           withCredentials: true,
           headers: {
             "Content-Type": "application/json",
