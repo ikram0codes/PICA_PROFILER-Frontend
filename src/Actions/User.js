@@ -1,7 +1,7 @@
 import { Dialpad } from "@mui/icons-material";
 import axios from "axios";
 import { toast } from "react-hot-toast";
-const BACKEND_SERVER_PATH = "https://pica-backend.vercel.app/";
+const BACKEND_SERVER_PATH = "https://pica-backend.vercel.app";
 export const loginUser =
   (username, password, navigate, setError) => async (dispatch) => {
     try {
