@@ -104,7 +104,7 @@ export const getProfile = () => async (dispatch) => {
     dispatch({
       type: "ProfileRequest",
     });
-    const response = await axios.get("https://pica-backend.vercel.app/t/me", {
+    const response = await axios.get("https://pica-backend.vercel.app/profile/t/me", {
       withCredentials: true,
       headers: {
         "Content-Type": "application/json",
@@ -128,7 +128,7 @@ export const getFeed = () => async (dispatch) => {
       type: "userPostsRequest",
     });
 
-    const response = await axios.get(`https://pica-backend.vercel.app/feed`, {
+    const response = await axios.get(`https://pica-backend.vercel.app/user/feed`, {
       withCredentials: true,
       headers: {
         "Content-Type": "application/json",
